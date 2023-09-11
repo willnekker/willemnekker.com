@@ -1,2 +1,5 @@
 # willemnekker.com
-My Website
+Hosts
+- Public Portfolio
+- Personal External-Facing Pages
+- Uni Projects
