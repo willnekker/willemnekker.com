@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Willem Nekker</title>
+  <link rel="icon" type="image/png" href="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzRxYmRpNG1zdDl4MTliMzk4YWFkcGk3bnl5eGhoaDNvMHl6NTN0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/f6XRqAg1SZ9nJN7Uw7/giphy.gif">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Custom CSS */
+    .navbar-dark .navbar-nav .nav-link {
+      transition: color 0.3s; /* Adding transition for smooth color change */
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: rgb(209, 209, 209); /* Change this to the desired color */
+    }
+
+    /* Customize background color of the top navbar */
+    .bg-lightgrey {
+      background-color: #2A2B2E; /* Change to your desired background color */
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-lightgrey">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Willem Nekker</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h1 class="fs-1"><span id="element"></span></h1>
+        <p class="lead">Welcome to my website!</p>
+        <hr class="col-1">
+        <a href="https://github.com/willnekker" class="btn btn-primary">
+          <img src="github.svg" alt="GitHub Logo" class="svg-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/willem-nekker-627972206/" class="btn btn-secondary">
+          <img src="linkedin.svg" alt="LinkedIn Logo" class="svg-icon">
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzRxYmRpNG1zdDl4MTliMzk4YWFkcGk3bnl5eGhoaDNvMHl6NTN0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/f6XRqAg1SZ9nJN7Uw7/giphy.gif" alt="Image" class="img-fluid img-fluid align-self-start">
+      </div>
+    </div>
+  </div>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    const hellos = [
+        "Hello!",
+        "Hallo!",
+        "Bonjour!",
+        "¡Hola!",
+        "Olá!",
+        "Ciao!",
+        "Hallo!",
+        "Witaj!",
+        "Pozdrav!",
+        "Ahoj!",
+        "Helló!",
+        "こんにちは！",
+        "안녕하세요!",
+        "你好！",
+        "مرحباً!",
+        "Привет!",
+        "Γειά σας!",
+        "Merhaba!",
+        "नमस्ते!",
+        "สวัสดีครับ/ค่ะ!",
+        "Xin chào!",
+        "Hej!",
+        "Hei!",
+        "Hej!",
+        "Hei!",
+        "Salut!",
+        "Привіт!",
+        "שלום!",
+        "Halo!",
+        "Hello!",
+        "Kamusta!",
+        "হ্যালো!"
+      ];
+
+    var typed = new Typed('#element', {
+      strings: hellos,
+      typeSpeed: 100,
+      loop: true,
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
